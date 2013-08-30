@@ -8,9 +8,9 @@
     font-family: main
     src: url('/fonts/signika-regular.ttf');
 
-bgcolor = #545e5f + 20%
+bgcolor = white //#545e5f + 20%
 shadowcolor = #444
-bgshadowcolor = #666688
+bgshadowcolor = white //#666688
 lightorange = #EFD6B8
 
 
@@ -98,7 +98,7 @@ html
 .btn
     background: buttoncolor
     border: 1px solid buttoncolor - 20%
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+    //box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
     margin: 0
     font-family: styled
 
@@ -111,11 +111,11 @@ html
     border-color: 1px solid #EFD6B8
 
 .btn:active
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
+    //box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
     background: highlightcolor - 10%
 
 .pressed
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
+    //box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
     background: buttoncolor - 10%
 
 .pressed:hover
@@ -125,7 +125,7 @@ html
 
 
 .btn:active
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
+    //box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
     background: buttoncolor - 10%
 
 .btn-green
@@ -138,7 +138,7 @@ html
 .btn-green:hover
     background: green
     color: textcolor
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+    //box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
     cursor: default
 
 .btn-orange
@@ -181,7 +181,7 @@ html
     // height: 100%
     padding: 0
     margin: 0
-    box-shadow: inset 0 0 100px #2b4244 + 20%
+    //box-shadow: inset 0 0 100px #2b4244 + 20%
     background: bgcolor
     overflow: hidden
 
@@ -191,7 +191,7 @@ html
     margin: 2%
     color: textcolor
     text-align: center
-    box-shadow: 0 0 0 0
+    //box-shadow: 0 0 0 0
 
 .icon-help
     background-image: url('../img/help.png')
@@ -214,37 +214,55 @@ html
     border-radius: 0
     .nav
         float: right
+        color: white
 
         .active > a
         .active > a:active
         .active > a:focus
-            box-shadow: 0
-            box-shadow: inset 1px 1px 2px bgcolor - 20%
-            background: #E1E1E1 - 10%
+            //box-shadow: 0
+            //box-shadow: inset 1px 1px 2px bgcolor - 20%
+            //background: #E1E1E1 - 10%
+            background: #13a7c7
+            //color : #404040
             outline: none
             text-shadow: none
+            color : white
 
         .active
-            text-shadow: none
+            background: #13a7c7
+            color : white
+            //text-shadow: none
 
         .active > a:hover
             cursor: default
-            background: bgcolor + 40%
-            box-shadow: inset 1px 1px 2px bgcolor - 20%
-            background: #E1E1E1 - 10%
+            background: #c4e5f0 //bgcolor + 40%
+            //box-shadow: inset 1px 1px 2px bgcolor - 20%
+            //background: #E1E1E1 - 10%
             text-shadow: none
+
+        .active > a:focus
+            background: #13a7c7
 
         li
             a
+                color : white
                 text-shadow: none
 
                 i
+                    color : white !important
                     margin-right 5px
 
             a:hover
                 text-shadow: none
                 cursor: pointer
-                background-color: lightorange
+                color : #404040 !important
+                background-color: #c4e5f0 //lightorange
+                #i
+                    color : white
+
+
+        .active > a:hover
+            background: #13a7c7
 
 #header
     box-sizing: border-box
@@ -256,7 +274,7 @@ html
 
     .navbar-inner
         padding-right 5px
-        background-color bgcolor + 80%
+        background-color #404040 //bgcolor + 80%
         background-image none
         height 100%
         border: 0
@@ -275,7 +293,7 @@ html
         margin 0
 
     a:hover
-        color: linkcolor
+        color: #c4e5f0 //linkcolor
 
     #buttons
         font-size: 1em
@@ -336,7 +354,7 @@ html
 
         text-align: left
         background: #8f9b9b
-        box-shadow 1px 1px 3px shadowcolor
+        //box-shadow 1px 1px 3px shadowcolor
 
         #dismiss-all
             text-align center
@@ -386,11 +404,12 @@ html
     text-align: center
     //border 1px solid appbordercolor
     border: 0
-    box-shadow 1px 1px 2px shadowcolor
+    //box-shadow 1px 1px 2px shadowcolor
     border-radius 4px
-    background linear-gradient(top, bgclearcolorbuttons 0%, bgcolorbuttons 100%)
-    background: linear-gradient(top,bgcolor + 60%, bgcolor + 20%)
+    //background linear-gradient(top, bgclearcolorbuttons 0%, bgcolorbuttons 100%)
+    //background: linear-gradient(top,bgcolor + 60%, bgcolor + 20%)
     padding-bottom: 20px
+    background-color: #c4e5f0
 
     img
         margin-top: 10px
@@ -398,8 +417,8 @@ html
     p
         margin: 0
         font-family: main
-        color textcolor
-        text-shadow 1px 1px 1px shadowcolor
+        color #404040 //textcolor
+        //text-shadow 1px 1px 1px shadowcolor
 
     .app-title
         font-size: 20px
@@ -433,7 +452,8 @@ html
     box-shadow none
 
 .application:hover
-    background linear-gradient(top, bgclearcolorhoverbuttons 0%, bgcolorhoverbuttons 100%)
+    background-color: #15a7c7
+    //background linear-gradient(top, bgclearcolorhoverbuttons 0%, bgcolorhoverbuttons 100%)
 
 .application.broken
     a
@@ -480,13 +500,13 @@ html
         border-radius: 0.4em
         border: 0
         background-color: textcolor
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45) inset
+        //box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45) inset
 
     select
         height: 35px
 
     input:focus
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75) inset, 0 0 17px rgba(82, 168, 236, 0.9)
+        //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75) inset, 0 0 17px rgba(82, 168, 236, 0.9)
         background: #e2f8ff
 
     .btn
@@ -544,7 +564,7 @@ html
 .loading-indicator
     border: 0
     background: transparent
-    box-shadow: 0
+    //box-shadow: 0
     color: textcolor
 
 .app-introduction
@@ -564,7 +584,7 @@ html
     margin-right: 1%
 
     background: bgcolor + 20%
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+    //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
     margin-top: 1%
 
     p
@@ -623,7 +643,7 @@ html
             font-weight: bold
             color: orange - 10%
             background: bgcolor + 70%
-            box-shadow: none
+            //box-shadow: none
             font-size: 0.8em
             padding: 4px 8px
             float: right
@@ -638,7 +658,7 @@ html
             font-weight: bold
             color: orange - 10%
             background: bgcolor + 70%
-            box-shadow: none
+            //box-shadow: none
             height: 20px
 
 #market-view #no-app-message,
@@ -650,7 +670,7 @@ html
     margin-right: 1%
 
     background: bgcolor + 20%
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+    //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
     margin-top: 1%
 
     h3
@@ -669,8 +689,9 @@ html
         margin: 10px 0px 10px 10px
 
 .navbar .nav > li > a > img
-    box-shadow: 1px 1px 3px #555
-    text-shadow: 1px 1px 3px #555
+
+    //box-shadow: 1px 1px 3px #555
+    //text-shadow: 1px 1px 3px #555
 
 .modal
     margin-top: -200px
@@ -695,7 +716,7 @@ html
         color: grey
         background: buttoncolor
         border: 1px solid buttoncolor - 20%
-        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+        //box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
         margin: 0
         font-family: styled
 
@@ -705,7 +726,7 @@ html
         //box-shadow: 0 0 8px highlightcolor
 
     .btn:active
-        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
+        //box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0
         background: buttoncolor - 10%
 
 
@@ -739,7 +760,7 @@ html
 
 @media (max-width: 800px)
     .home-body
-        box-shadow: none
+        //box-shadow: none
 
     #header-title
         a

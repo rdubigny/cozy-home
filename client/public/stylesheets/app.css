@@ -6000,7 +6000,7 @@ a.editable-click.editable-disabled:hover {
   src: url("/fonts/signika-regular.ttf");
 }
 body {
-  background-color: #738182;
+  background-color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6066,8 +6066,6 @@ html {
 .btn {
   background: #eaeded;
   border: 1px solid #b7c2c2;
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 1px 2px rgba(0,0,0,0.05);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 1px 2px rgba(0,0,0,0.05);
   margin: 0;
   font-family: styled;
 }
@@ -6079,13 +6077,9 @@ html {
   border-color: 1px solid #efd6b8;
 }
 .btn:active {
-  -webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
-  box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
   background: #e7c295;
 }
 .pressed {
-  -webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
-  box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
   background: #d1d7d7;
 }
 .pressed:hover {
@@ -6093,8 +6087,6 @@ html {
   border: 1px solid #efd6b8;
 }
 .btn:active {
-  -webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
-  box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
   background: #d1d7d7;
 }
 .btn-green {
@@ -6107,8 +6099,6 @@ html {
 .btn-green:hover {
   background: #42b838;
   color: #eaf1f1;
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 1px 2px rgba(0,0,0,0.05);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 1px 2px rgba(0,0,0,0.05);
   cursor: default;
 }
 .btn-orange {
@@ -6142,7 +6132,7 @@ html {
 .progress {
   margin: 20px 0;
   height: 10px;
-  background: #505a5b;
+  background: #b3b3b3;
 }
 .progress .bar {
   background: #e3e6e6;
@@ -6153,9 +6143,7 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  -webkit-box-shadow: inset 0 0 100px #4a7175;
-  box-shadow: inset 0 0 100px #4a7175;
-  background: #738182;
+  background: #fff;
   overflow: hidden;
 }
 .well {
@@ -6164,8 +6152,6 @@ html {
   margin: 2%;
   color: #eaf1f1;
   text-align: center;
-  -webkit-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
 }
 .icon-help {
   background-image: url("../img/help.png");
@@ -6188,39 +6174,47 @@ html {
 }
 .navbar .nav {
   float: right;
+  color: #fff;
 }
 .navbar .nav .active > a,
 .navbar .nav .active > a:active,
 .navbar .nav .active > a:focus {
-  -webkit-box-shadow: 0;
-  box-shadow: 0;
-  -webkit-box-shadow: inset 1px 1px 2px #5c6768;
-  box-shadow: inset 1px 1px 2px #5c6768;
-  background: #cbcbcb;
+  background: #13a7c7;
   outline: none;
   text-shadow: none;
+  color: #fff;
 }
 .navbar .nav .active {
-  text-shadow: none;
+  background: #13a7c7;
+  color: #fff;
 }
 .navbar .nav .active > a:hover {
   cursor: default;
-  background: #abb4b4;
-  -webkit-box-shadow: inset 1px 1px 2px #5c6768;
-  box-shadow: inset 1px 1px 2px #5c6768;
-  background: #cbcbcb;
+  background: #c4e5f0;
   text-shadow: none;
 }
+.navbar .nav .active > a:focus {
+  background: #13a7c7;
+}
 .navbar .nav li a {
+  color: #fff;
   text-shadow: none;
 }
 .navbar .nav li a i {
+  color: #fff !important;
   margin-right: 5px;
 }
 .navbar .nav li a:hover {
   text-shadow: none;
   cursor: pointer;
-  background-color: #efd6b8;
+  color: #404040 !important;
+  background-color: #c4e5f0;
+}
+.navbar .nav li a:hover #i {
+  color: #fff;
+}
+.navbar .nav .active > a:hover {
+  background: #13a7c7;
 }
 #header {
   -webkit-box-sizing: border-box;
@@ -6230,11 +6224,11 @@ html {
   margin-top: 0px;
   margin-bottom: 0px;
   border: 0;
-  border-bottom: 1px solid #738182;
+  border-bottom: 1px solid #fff;
 }
 #header .navbar-inner {
   padding-right: 5px;
-  background-color: #e3e6e6;
+  background-color: #404040;
   background-image: none;
   height: 100%;
   border: 0;
@@ -6254,7 +6248,7 @@ html {
   margin: 0;
 }
 #header a:hover {
-  color: linkcolor;
+  color: #c4e5f0;
 }
 #header #buttons {
   font-size: 1em;
@@ -6316,8 +6310,6 @@ html {
   padding: 5px;
   text-align: left;
   background: #8f9b9b;
-  -webkit-box-shadow: 1px 1px 3px #444;
-  box-shadow: 1px 1px 3px #444;
 }
 #notifications-container #notifications #dismiss-all {
   text-align: center;
@@ -6367,23 +6359,10 @@ html {
   display: inline-block;
   text-align: center;
   border: 0;
-  -webkit-box-shadow: 1px 1px 2px #444;
-  box-shadow: 1px 1px 2px #444;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c6d3d7), color-stop(1, #8ca6ae));
-  background: -webkit-linear-gradient(top, #c6d3d7 0%, #8ca6ae 100%);
-  background: -moz-linear-gradient(top, #c6d3d7 0%, #8ca6ae 100%);
-  background: -o-linear-gradient(top, #c6d3d7 0%, #8ca6ae 100%);
-  background: -ms-linear-gradient(top, #c6d3d7 0%, #8ca6ae 100%);
-  background: linear-gradient(top, #c6d3d7 0%, #8ca6ae 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c7cdcd), color-stop(1, #8f9b9b));
-  background: -webkit-linear-gradient(top, #c7cdcd 0%, #8f9b9b 100%);
-  background: -moz-linear-gradient(top, #c7cdcd 0%, #8f9b9b 100%);
-  background: -o-linear-gradient(top, #c7cdcd 0%, #8f9b9b 100%);
-  background: -ms-linear-gradient(top, #c7cdcd 0%, #8f9b9b 100%);
-  background: linear-gradient(top, #c7cdcd 0%, #8f9b9b 100%);
   padding-bottom: 20px;
+  background-color: #c4e5f0;
 }
 .application img {
   margin-top: 10px;
@@ -6391,8 +6370,7 @@ html {
 .application p {
   margin: 0;
   font-family: main;
-  color: #eaf1f1;
-  text-shadow: 1px 1px 1px #444;
+  color: #404040;
 }
 .application .app-title {
   font-size: 20px;
@@ -6428,12 +6406,7 @@ html {
   box-shadow: none;
 }
 .application:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dce4e7), color-stop(1, #a3b8be));
-  background: -webkit-linear-gradient(top, #dce4e7 0%, #a3b8be 100%);
-  background: -moz-linear-gradient(top, #dce4e7 0%, #a3b8be 100%);
-  background: -o-linear-gradient(top, #dce4e7 0%, #a3b8be 100%);
-  background: -ms-linear-gradient(top, #dce4e7 0%, #a3b8be 100%);
-  background: linear-gradient(top, #dce4e7 0%, #a3b8be 100%);
+  background-color: #15a7c7;
 }
 .application.broken a {
   cursor: default;
@@ -6481,8 +6454,6 @@ html {
   border-radius: 0.4em;
   border: 0;
   background-color: #eaf1f1;
-  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.45) inset;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.45) inset;
 }
 .control-group select,
 #add-app-form select,
@@ -6492,8 +6463,6 @@ html {
 .control-group input:focus,
 #add-app-form input:focus,
 #account-form input:focus {
-  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset, 0 0 17px rgba(82,168,236,0.9);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset, 0 0 17px rgba(82,168,236,0.9);
   background: #e2f8ff;
 }
 .control-group .btn,
@@ -6543,7 +6512,7 @@ html {
 }
 #home-view {
   overflow: hidden;
-  background: #738182;
+  background: #fff;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -6558,8 +6527,6 @@ html {
 .loading-indicator {
   border: 0;
   background: transparent;
-  -webkit-box-shadow: 0;
-  box-shadow: 0;
   color: #eaf1f1;
 }
 .app-introduction {
@@ -6577,9 +6544,7 @@ html {
   width: 32.33%;
   height: 140px;
   margin-right: 1%;
-  background: #8f9b9b;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  background: #fff;
   margin-top: 1%;
 }
 #your-app p {
@@ -6621,7 +6586,7 @@ html {
   box-sizing: border-box;
   height: 140px;
   width: 140px;
-  background: #abb4b4;
+  background: #fff;
   padding: 20px 20px 10px 20px;
   margin-right: 10px;
 }
@@ -6643,9 +6608,7 @@ html {
   outline: 0;
   font-weight: bold;
   color: #e57a00;
-  background: #d5d9da;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background: #fff;
   font-size: 0.8em;
   padding: 4px 8px;
   float: right;
@@ -6659,9 +6622,7 @@ html {
   cursor: pointer;
   font-weight: bold;
   color: #e57a00;
-  background: #d5d9da;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background: #fff;
   height: 20px;
 }
 #market-view #no-app-message,
@@ -6673,9 +6634,7 @@ html {
   width: 32.33%;
   height: 140px;
   margin-right: 1%;
-  background: #8f9b9b;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  background: #fff;
   margin-top: 1%;
 }
 #market-view #no-app-message h3,
@@ -6695,11 +6654,6 @@ html {
   width: 15%;
   height: 70px;
   margin: 10px 0px 10px 10px;
-}
-.navbar .nav > li > a > img {
-  -webkit-box-shadow: 1px 1px 3px #555;
-  box-shadow: 1px 1px 3px #555;
-  text-shadow: 1px 1px 3px #555;
 }
 .modal {
   margin-top: -200px;
@@ -6725,8 +6679,6 @@ html {
   color: #333;
   background: #eaeded;
   border: 1px solid #b7c2c2;
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 1px 2px rgba(0,0,0,0.05);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 1px 2px rgba(0,0,0,0.05);
   margin: 0;
   font-family: styled;
 }
@@ -6735,8 +6687,6 @@ html {
   border-color: 1px solid #efd6b8;
 }
 .modal-footer .btn:active {
-  -webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
-  box-shadow: 1px 3px 2px rgba(0,0,0,0.2) inset, 0 0 0;
   background: #d1d7d7;
 }
 .modal-footer .btn-primary {
@@ -6767,10 +6717,6 @@ html {
   }
 }
 @media (max-width: 800px) {
-  .home-body {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
   #header-title a {
     padding-left: 0;
     padding-right: 0;
